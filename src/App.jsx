@@ -1,7 +1,9 @@
 import "./App.css";
 import Accordion from "./Components/Accordion-Project/Accordion";
 import SliderImage from "./Components/Image-Slider/Slider";
+import LightDarkMode from "./Components/Light-Dark-Mode/Theme";
 import LoadData from "./Components/LoadingDate-Button/LoadData";
+import QRGenerator from "./Components/QR-Code-Generator/QR";
 import RandomColorGeneratot from "./Components/Random-Color_Generator/RandomColor";
 import Star from "./Components/Star-Rating/star";
 import menus from "./Components/Tree-View/Data";
@@ -25,7 +27,13 @@ function App() {
       {/* <LoadData /> */}
 
       {/* Menu like tree */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
+
+      {/* The QR - Code - Generator */}
+      {/* <QRGenerator /> */}
+
+      {/* Toggle button for Dark and White Theme */}
+      <LightDarkMode />
     </div>
   );
 }
