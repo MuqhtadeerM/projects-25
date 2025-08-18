@@ -1,13 +1,14 @@
-import "./App.css";
 import Accordion from "./Components/Accordion-Project/Accordion";
 import SliderImage from "./Components/Image-Slider/Slider";
 import LightDarkMode from "./Components/Light-Dark-Mode/Theme";
 import LoadData from "./Components/LoadingDate-Button/LoadData";
 import QRGenerator from "./Components/QR-Code-Generator/QR";
 import RandomColorGeneratot from "./Components/Random-Color_Generator/RandomColor";
+import ScrollInd from "./Components/Scroll-Indicator/Scroll";
 import Star from "./Components/Star-Rating/star";
 import menus from "./Components/Tree-View/Data";
 import TreeView from "./Components/Tree-View/TreeMenu";
+import "./App.css";
 function App() {
   return (
     <div>
@@ -33,7 +34,10 @@ function App() {
       {/* <QRGenerator /> */}
 
       {/* Toggle button for Dark and White Theme */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+
+      {/* Scroll Indicator */}
+      <ScrollInd url={"https://dummyjson.com/products"} />
     </div>
   );
 }
