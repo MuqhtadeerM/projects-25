@@ -6,9 +6,11 @@ import QRGenerator from "./Components/QR-Code-Generator/QR";
 import RandomColorGeneratot from "./Components/Random-Color_Generator/RandomColor";
 import ScrollInd from "./Components/Scroll-Indicator/Scroll";
 import Star from "./Components/Star-Rating/star";
-import menus from "./Components/Tree-View/Data";
+// import menus from "./Components/Tree-View/Data";
 import TreeView from "./Components/Tree-View/TreeMenu";
 import "./App.css";
+import Tabs from "./Components/Tabs/tabs";
+import TabTest from "./Components/Tabs/tabs-test";
 function App() {
   return (
     <div>
@@ -37,7 +39,10 @@ function App() {
       {/* <LightDarkMode /> */}
 
       {/* Scroll Indicator */}
-      <ScrollInd url={"https://dummyjson.com/products"} />
+      {/* <ScrollInd url={"https://dummyjson.com/products"} /> */}
+
+      {/* Custom Tab Components */}
+      <TabTest />
     </div>
   );
 }

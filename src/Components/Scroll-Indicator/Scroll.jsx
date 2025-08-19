@@ -6,6 +6,7 @@ export default function ScrollInd({ url }) {
   const [errorMsg, setErrorMsg] = useState("");
   const [scrollPer, setScrollPer] = useState(0);
 
+  // fetching the data from api
   const fetchData = async (getUrl) => {
     try {
       setLoading(true);
@@ -29,12 +30,12 @@ export default function ScrollInd({ url }) {
       document.documentElement.scrollHeight,
       document.documentElement.clientHeight
     );
-    const howMuchScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
     const height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
+
+    const howMuchScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
 
     setScrollPer((howMuchScroll / height) * 100);
   };
@@ -49,7 +50,7 @@ export default function ScrollInd({ url }) {
     return () => {
       window.removeEventListener("scroll", () => {});
     };
-  });
+  }, []);
   console.log(data, scrollPer);
 
   if (loading) {
