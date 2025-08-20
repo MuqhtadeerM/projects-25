@@ -1,0 +1,54 @@
+.model {
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  animation-name: animationModel;
+  animation-duration: 1s;
+}
+
+.model-content {
+  position: relative;
+  background-color: pink;
+  margin: auto;
+  border: 1px solid red;
+  width: 80%;
+}
+.close-model-icon {
+  cursor: pointer;
+  font-size: 40px;
+  float: top;
+  font-weight: bold;
+}
+
+.header {
+  padding: 4px 16px;
+  background-color: blue;
+  color: white;
+}
+
+.body {
+  padding: 2px 16px;
+  height: 100px;
+}
+
+.footer {
+  padding: 2px 16px;
+  background-color: yellow;
+  color: white;
+}
+@keyframes animationModel {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

@@ -11,6 +11,7 @@ import TreeView from "./Components/Tree-View/TreeMenu";
 import "./App.css";
 import Tabs from "./Components/Tabs/tabs";
 import TabTest from "./Components/Tabs/tabs-test";
+import ModelTest from "./Components/Custom-Model/Model-test";
 function App() {
   return (
     <div>
@@ -42,7 +43,10 @@ function App() {
       {/* <ScrollInd url={"https://dummyjson.com/products"} /> */}
 
       {/* Custom Tab Components */}
-      <TabTest />
+      {/* <TabTest /> */}
+
+      {/* Custom Model Pop Up is Opening */}
+      <ModelTest />
     </div>
   );
 }
