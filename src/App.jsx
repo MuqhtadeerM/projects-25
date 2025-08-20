@@ -8,10 +8,12 @@ import ScrollInd from "./Components/Scroll-Indicator/Scroll";
 import Star from "./Components/Star-Rating/star";
 // import menus from "./Components/Tree-View/Data";
 import TreeView from "./Components/Tree-View/TreeMenu";
-import "./App.css";
 import Tabs from "./Components/Tabs/tabs";
 import TabTest from "./Components/Tabs/tabs-test";
 import ModelTest from "./Components/Custom-Model/Model-test";
+import ProfileFinder from "./Components/Git-Profile-Finder/profile";
+import SearchAuto from "./Components/Search-AutoComplete/Search";
+import "./App.css";
 function App() {
   return (
     <div>
@@ -46,7 +48,13 @@ function App() {
       {/* <TabTest /> */}
 
       {/* Custom Model Pop Up is Opening */}
-      <ModelTest />
+      {/* <ModelTest /> */}
+
+      {/* finding the username on  github */}
+      {/* <ProfileFinder /> */}
+
+      {/* Auto Search Completeor */}
+      <SearchAuto />
     </div>
   );
 }
