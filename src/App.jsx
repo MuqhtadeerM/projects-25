@@ -14,6 +14,12 @@ import ModelTest from "./Components/Custom-Model/Model-test";
 import ProfileFinder from "./Components/Git-Profile-Finder/profile";
 import SearchAuto from "./Components/Search-AutoComplete/Search";
 import "./App.css";
+import TicTac from "./Components/tic-tac-toe/tic";
+import FeatureFlagGlobal from "./Components/feature-flag/Context/context";
+import FeatureFlags from "./Components/feature-flag";
+import UseFetchHookTest from "./Components/CustomsHooks-use-fetch/test";
+import UseOnclickTest from "./Components/use-outside-click/test";
+import UseWindowResizeTest from "./Components/use-window-hook/test";
 function App() {
   return (
     <div>
@@ -54,7 +60,24 @@ function App() {
       {/* <ProfileFinder /> */}
 
       {/* Auto Search Completeor */}
-      <SearchAuto />
+      {/* <SearchAuto /> */}
+
+      {/* tic tac toe */}
+      {/* <TicTac /> */}
+
+      {/* Feature Flag Implementation */}
+      {/* <FeatureFlagGlobal>
+        <FeatureFlags />
+      </FeatureFlagGlobal> */}
+
+      {/* using the custom hook with 3 states to call the api */}
+      {/* <UseFetchHookTest /> */}
+
+      {/* use Onclick outside hook test */}
+      {/* <UseOnclickTest /> */}
+
+      {/* use window resize Hook test */}
+      <UseWindowResizeTest />
     </div>
   );
 }

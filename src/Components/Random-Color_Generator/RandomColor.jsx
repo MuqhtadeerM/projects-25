@@ -50,10 +50,11 @@ export default function RandomColorGeneratot() {
           fontSize: "60px",
           marginTop: "50px",
           flexDirection: "column",
+          backgroundColor: "green",
         }}
       >
         <h3>{typeOfColor === "rgb " ? "RGB color" : "Hex Color"}</h3>
-        <h1>{color}</h1>
+        <h3>{color}</h3>
       </div>
     </div>
   );
